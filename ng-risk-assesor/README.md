@@ -1,8 +1,8 @@
-# API Security Assessment System
+# Security Assessment System
 
 ## Overview
 
-Welcome to the API Security Assessment System! This project leverages large language models (LLMs) to identify, analyze, and mitigate security risks within APIs. Our aim is to enhance the security posture of organizations by providing advanced detection and assessment capabilities using cutting-edge artificial intelligence technology.
+Welcome to the  Security Assessment System! This project leverages large language models (LLMs) to identify, analyze, and mitigate security risks within APIs. Our aim is to enhance the security posture of organizations by providing advanced detection and assessment capabilities using cutting-edge artificial intelligence technology.
 
 ## Features
 
