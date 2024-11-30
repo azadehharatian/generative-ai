@@ -9,14 +9,20 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Ransomeware-FA.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Ransomeware-FA" startnode="1" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="B63F7668-FCF5-4F91-900E-D3BA55F66666" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="625,250" size="100,100">(align:&quot;==&gt;&quot;)[اولین روز کاری شما در شرکت است و شما مشتاق هستید تا توانایی‌های خود را به مدیر خود، لیلا، نشان دهید و ثابت کنید که از پس کار برمی‌آیید. در حال چک کردن ایمیل‌ها هستید که یکی توجه شما را جلب می‌کند
-
+<tw-storydata name="Ransomeware-FA" startnode="1" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="B63F7668-FCF5-4F91-900E-D3BA55F66666" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-passage {
+    font-family: "B Nazanin";
+    direction: rtl;
+  
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="625,250" size="100,100">(align:&quot;==&gt;&quot;)[
+اولین روز کاری شما در شرکت است و شما مشتاق هستید تا توانایی‌های خود را به مدیر خود، لیلا، نشان دهید و ثابت کنید که از پس کار برمی‌آیید. در حال چک کردن ایمیل‌ها هستید که یکی توجه شما را جلب می‌کند
 &lt;img src=&quot;https://cdn.prod.website-files.com/5e5ff4f0165cd367cc7ca88f/60132649281bc3e6d0261408_office365-phishing-example-p-1080.png&quot; width=&quot;60%&quot; height=&quot;60%&quot;&gt;
-(set: $score to 0)
+(set: $score to 50)
+&lt;label&gt;امتیاز فعلی شما: (print: $score)(print: &#39;&lt;progress max=&quot;100&quot; value=&quot;&#39; + (text: $score) + &#39;&quot;&gt;&lt;/progress&gt;&#39;)
+
 این ایمیل مهم به نظر می‌رسد. آیا روی لینک کلیک می‌کنید؟
 [[روی دکمه کلیک کن|ClickLink]]  
-[[روی دکمه کلیک نکن|DontClick]]]
-</tw-passagedata><tw-passagedata pid="2" name="ClickLink" tags="" position="562.5,375" size="100,100">(align:&quot;==&gt;&quot;)[شما روی لینک کلیک می‌کنید. بلافاصله صفحه‌ی کامپیوترتان لرزشی می‌کند و بعد از آن یک پیام ترسناک با متن قرمز ظاهر می‌شود.
+[[روی دکمه کلیک نکن|DontClick]](enchant:?page,(text-colour:black)+(bg:white))]</tw-passagedata><tw-passagedata pid="2" name="ClickLink" tags="" position="525,375" size="100,100">(align:&quot;==&gt;&quot;)[شما روی لینک کلیک می‌کنید. بلافاصله صفحه‌ی کامپیوترتان لرزشی می‌کند و بعد از آن یک پیام ترسناک با متن قرمز ظاهر می‌شود.
 
 شما روی لینک کلیک می‌کنید. بلافاصله صفحه‌ی کامپیوترتان لرزشی می‌کند و بعد از آن یک پیام ترسناک با متن قرمز ظاهر می‌شود.
 
@@ -29,16 +35,15 @@
 
 &lt;img src=&quot;https://deft.com/wp-content/uploads/2019/07/ransomware-attack.jpg&quot; width=&quot;60%&quot; height=&quot;60%&quot;&gt;
 
+&lt;label&gt;امتیاز فعلی شما: (print: $score)(print: &#39;&lt;progress max=&quot;100&quot; value=&quot;&#39; + (text: $score) + &#39;&quot;&gt;&lt;/progress&gt;&#39;)
+
 
 [[هول کنید و خودتان سعی کنید مشکل را حل کنید|Panic]]  
 [[به لیلا، مدیر خود زنگ بزنید|CallLeila]]]
-</tw-passagedata><tw-passagedata pid="3" name="DontClick" tags="" position="687.5,375" size="100,100">(align:&quot;==&gt;&quot;)[تصمیم می‌گیرید روی لینک کلیک نکنید و به یاد می‌آورید که باید مراقب ایمیل‌های مشکوک باشید. ایمیل را حذف کرده و به کار خود ادامه می‌دهید. بحران رفع شد!
-
+</tw-passagedata><tw-passagedata pid="3" name="DontClick" tags="" position="687.5,375" size="100,100">(enchant:?page,(text-colour:black)+(bg:white))(align:&quot;==&gt;&quot;)[تصمیم می‌گیرید روی لینک کلیک نکنید و به یاد می‌آورید که باید مراقب ایمیل‌های مشکوک باشید. ایمیل را حذف کرده و به کار خود ادامه می‌دهید. بحران رفع شد!
 آفرین! شما به‌خوبی از یک حمله باج‌افزار جلوگیری کردید.
-
-(set: $score to $score + 100)
-
-امتیاز نهایی شما: (print: $score)
+(set: $score to $score + 50)
+&lt;label&gt;امتیاز فعلی شما: (print: $score)(print: &#39;&lt;progress max=&quot;100&quot; value=&quot;&#39; + (text: $score) + &#39;&quot;&gt;&lt;/progress&gt;&#39;)
 &lt;img src=&quot;https://img.freepik.com/premium-vector/congrats-you-win-vector-banner-congratulations-winner_432495-550.jpg?w=1380&quot; width=&quot;60%&quot; height=&quot;60%&quot;&gt;
 
 [[دوباره شروع کن|Start]]]
@@ -50,8 +55,7 @@
 
 &lt;img src=&quot;https://media.gettyimages.com/id/529481819/de/video/aufschl%C3%BCsselung.jpg?s=640x640&amp;k=20&amp;c=2AQxc-yC5mzA7zhMdBGz4ZMVF5oemBNLYTImJIpipF8=&quot; width=&quot;60%&quot; height=&quot;60%&quot;&gt;
 
- (set: $score to $score - 10)
-امتیاز فعلی شما: (print: $score)
+&lt;label&gt;امتیاز فعلی شما: (print: $score)(print: &#39;&lt;progress max=&quot;100&quot; value=&quot;&#39; + (text: $score) + &#39;&quot;&gt;&lt;/progress&gt;&#39;)
 
 [[به لیلا زنگ بزنید|CallLeila]]  
 [[کامپیوتر را خاموش کرده و از محل بروید|Leave]]]
@@ -64,8 +68,7 @@
 حالا چه می‌کنید؟
 
  (set: $score to $score + 30)
-امتیاز فعلی شما: (print: $score)
-
+&lt;label&gt;امتیاز فعلی شما: (print: $score)(print: &#39;&lt;progress max=&quot;100&quot; value=&quot;&#39; + (text: $score) + &#39;&quot;&gt;&lt;/progress&gt;&#39;)
 &lt;img src=&quot;https://media.istockphoto.com/id/1346576524/de/foto/schwarze-islamische-dame-in-hijab-und-headset-mit-videoanruf-auf-laptop.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=JZ9oOAvX5BpTtTj0j0prsIB3kA0rJ9ytNagk4Wn_wiE=&quot; width=&quot;60%&quot; height=&quot;60%&quot;&gt;
 
 [[کامپیوتر را جدا کرده و دستورات لیلا را دنبال کنید|Disconnect]]  
@@ -75,9 +78,9 @@
 
 **&quot;باید زودتر کاری انجام می‌دادم&quot;،** با خود فکر می‌کنید و متوجه می‌شوید که عدم اقدام باعث وخامت مشکل شده است.
 
- (set: $score to $score - 20)
+ (set: $score to $score - 30)
  
-امتیاز فعلی شما: (print: $score)
+&lt;label&gt;امتیاز فعلی شما: (print: $score)(print: &#39;&lt;progress max=&quot;100&quot; value=&quot;&#39; + (text: $score) + &#39;&quot;&gt;&lt;/progress&gt;&#39;)
 &lt;img src=&quot;https://www.dbxuk.com/images/blogs/blogs-2022/business-people-working-office.jpg&quot; width=&quot;60%&quot; height=&quot;60%&quot;&gt;
 
 
@@ -89,9 +92,8 @@
 لیلا شروع به اجرای ابزارهای تشخیصی می‌کند و توضیح می‌دهد که پرداخت باج راه حل نیست. **&quot;هیچ تضمینی وجود ندارد که اگر پول بدهیم، فایل‌هایت را آزاد کنند.&quot;**
 
 چه کار می‌کنید؟
- (set: $score to $score + 30)
-امتیاز فعلی شما: (print: $score)
-
+ (set: $score to $score + 10)
+&lt;label&gt;امتیاز فعلی شما: (print: $score)(print: &#39;&lt;progress max=&quot;100&quot; value=&quot;&#39; + (text: $score) + &#39;&quot;&gt;&lt;/progress&gt;&#39;)
 &lt;img src=&quot;https://s38063.pcdn.co/wp-content/uploads/2022/04/Active-Directory-disaster-recovery.jpg.optimal.jpg&quot; width=&quot;60%&quot; height=&quot;60%&quot;&gt;
 
 [[از لیلا درباره باج‌افزار سوال کنید|AskLeila]]  
@@ -102,7 +104,8 @@
 شما به‌سختی می‌آموزید که گاهی بهتر است زودتر کمک بخواهید.
 
  (set: $score to $score - 30)
-امتیاز فعلی شما: (print: $score)
+&lt;label&gt;امتیاز فعلی شما: (print: $score)(print: &#39;&lt;progress max=&quot;100&quot; value=&quot;&#39; + (text: $score) + &#39;&quot;&gt;&lt;/progress&gt;&#39;)
+
 &lt;img src=&quot;https://miro.medium.com/v2/resize:fit:1400/0*zou1M-QfDBL813Zp&quot; width=&quot;60%&quot; height=&quot;60%&quot;&gt;
 
 
@@ -113,16 +116,15 @@
 
 **&quot;ما فایل‌هایت را از پشتیبان بازیابی خواهیم کرد.&quot;** لیلا اضافه می‌کند. **&quot;خوش‌شانس هستی که ما سیستم پشتیبان قوی داریم.&quot;**
 
- (set: $score to $score + 30)
-امتیاز فعلی شما: (print: $score)
-
+ (set: $score to $score + 10)
+&lt;label&gt;امتیاز فعلی شما: (print: $score)(print: &#39;&lt;progress max=&quot;100&quot; value=&quot;&#39; + (text: $score) + &#39;&quot;&gt;&lt;/progress&gt;&#39;)
 &lt;img src=&quot;https://www.jakobsoftware.de/wp-content/uploads/Backup2.png&quot; width=&quot;60%&quot; height=&quot;60%&quot;&gt;
 [[ادامه بده|End]]]</tw-passagedata><tw-passagedata pid="10" name="StayQuiet" tags="" position="750,750" size="100,100">(align:&quot;==&gt;&quot;)[تصمیم می‌گیرید که بگذارید لیلا همه چیز را مدیریت کند. او به‌سرعت و کارآمد عمل می‌کند و هر مرحله از فرآیند را برایتان توضیح می‌دهد. او فایل‌های شما را از پشتیبان‌های شرکت بازیابی می‌کند و به‌زودی کامپیوترتان از باج‌افزار پاک می‌شود.
 
 **&quot;دفعه بعد بیشتر مراقب باش&quot;،** لیلا با لبخند می‌گوید. **&quot;همیشه به پشتیبان‌ها نمی‌شود تکیه کرد.&quot;**
 
  (set: $score to $score + 10)
-امتیاز فعلی شما: (print: $score)
+&lt;label&gt;امتیاز فعلی شما: (print: $score)(print: &#39;&lt;progress max=&quot;100&quot; value=&quot;&#39; + (text: $score) + &#39;&quot;&gt;&lt;/progress&gt;&#39;)
 
 &lt;img src=&quot;https://www.netatwork.com/wp-content/uploads/2019/08/detecting-phishing-email-600x461.png&quot; width=&quot;60%&quot; height=&quot;60%&quot;&gt;
 
@@ -133,7 +135,7 @@
 **&quot;دفعه بعد مراقب‌تر باش&quot;،** لیلا به شما یادآوری می‌کند. **&quot;ایمیل‌های فیشینگ می‌توانند فریبنده باشند، اما یک مقدار دقت بیشتر می‌تواند از بسیاری از مشکلات جلوگیری کند.&quot;**
 
 **تبریک! شما از حمله باج‌افزار جان سالم به در بردید و برخی از اصول مهم امنیت سایبری را یاد گرفتید.**
-امتیاز نهایی شما: (print: $score)
+&lt;label&gt;امتیاز فعلی شما: (print: $score)(print: &#39;&lt;progress max=&quot;100&quot; value=&quot;&#39; + (text: $score) + &#39;&quot;&gt;&lt;/progress&gt;&#39;)
 
 &lt;img src=&quot;https://aghlc.com/images/infographics/2016/phishing-infographic-160812.png&quot; width=&quot;60%&quot; height=&quot;60%&quot;&gt;
 
@@ -160,4 +162,3 @@ h(Math,"atanh",xr.atanh,Math.atanh(1e-300)===0);h(Math,"tanh",xr.tanh,Math.tanh(
 
 </body>
 </html>
-
